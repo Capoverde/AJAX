@@ -59,6 +59,12 @@ section {
     box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
+li {
+    list-style-type: lower-latin;
+
+}
+
+
 #btn1 {
     position: absolute;
     bottom: 10%;

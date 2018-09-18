@@ -60,8 +60,13 @@ function loadUser() {
 
     xhr.onload = function () {
         if (this.status == 200) {
-            console.log(this.responseText);
-
+            var user = JSON.parse(this.responseText);
+            var output = '';
+            output += '<ul>' + '<li>ID: ' + user.id + '</li>' +
+                '<li>name: ' + user.name + '</li>' +
+                '<li>email: ' + user.email + '</li>' +
+                '</ul>';
+            document.getElementById('cont2').innerHTML = output;
         }
 
     }
