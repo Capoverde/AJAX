@@ -12,5 +12,20 @@
         "id": 3,
         "name": "Megan",
         "mail": "Megan@gmail.com"
+    },
+    {
+        "id": 4,
+        "name": "Inka",
+        "mail": "Inka@gmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Ania",
+        "mail": "Ania@gmail.com"
+    },
+    {
+        "id": 6,
+        "name": "Piotrek",
+        "mail": "Piotrek@gmail.com"
     }
 ]

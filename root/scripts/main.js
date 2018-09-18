@@ -91,7 +91,7 @@ function loadUsers() {
                 output += '<ul>' +
                     '<li>ID: ' + users[i].id + '</li>' +
                     '<li>name: ' + users[i].name + '</li>' +
-                    '<li>email: ' + users[i].email + '</li>' +
+                    '<li>email: ' + users[i].mail + '</li>' + '<br>' +
                     '</ul>';
             }
             document.getElementById('cont2').innerHTML = output;
@@ -118,3 +118,6 @@ function clearContnent(e) {
 // 200: "OK"
 // 403: 'FORBIDDEN'
 // 404: "NO FOUND"
+
+
+//  ----------------- EXTERNAL API ------------------ //
