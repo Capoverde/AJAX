@@ -1,10 +1,14 @@
 // ZMIENNE GLOBALNE
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
-const btn3 = document.getElementById('btn3');
-const btnClear = document.getElementById('clear')
-let container1 = document.getElementById('cont1')
+const btn3 = document.getElementById('btn4');
+const btn4 = document.getElementById('btn5');
+const btn5 = document.getElementById('btn3');
+const btnClear = document.getElementById('clear');
+const btnClear2 = document.getElementById('clear2');
+let container1 = document.getElementById('cont1');
 let container2 = document.getElementById('cont2');
+let container3 = document.getElementById('cont3');
 let user = document.getElementById('user');
 let users = document.getElementById('users');
 
@@ -13,6 +17,7 @@ btn1.addEventListener('click', loadText);
 btn2.addEventListener('click', loadUser);
 btn3.addEventListener('click', loadUsers);
 btnClear.addEventListener('click', clearContnent);
+btnClear2.addEventListener('click', clearContent3);
 
 
 function loadText() {
@@ -102,9 +107,16 @@ function loadUsers() {
     xhr.send();
 }
 
+// Clears content in contaier 
+
 function clearContnent(e) {
     e.preventDefault();
     container2.innerHTML = '';
+}
+
+function clearContnent(e) {
+    e.preventDefault();
+    container3.innerHTML = '';
 }
 
 // readystate values:

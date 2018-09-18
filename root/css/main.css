@@ -152,6 +152,60 @@ li {
     outline: none;
 }
 
+#clear:hover {
+    background: red;
+    color: #fff;
+    border: 3px solid rgb(77, 12, 12);
+    transform: translate(-50%, -50%);
+}
+
+#clear2 {
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    background: transparent;
+    padding: 5px 8px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+
+#clear2:hover {
+    background: red;
+    color: #fff;
+    border: 3px solid rgb(77, 12, 12);
+    transform: translate(-50%, -50%);
+}
+
+#clear4 {
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    background: transparent;
+    padding: 5px 8px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+
+#clear5:hover {
+    background: red;
+    color: #fff;
+    border: 3px solid rgb(77, 12, 12);
+    transform: translate(-50%, -50%);
+}
 
 hr {
     border: 0;
