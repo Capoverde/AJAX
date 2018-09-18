@@ -3,6 +3,7 @@ const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
 const btnClear = document.getElementById('clear')
+let container1 = document.getElementById('cont1')
 let container2 = document.getElementById('cont2');
 let user = document.getElementById('user');
 let users = document.getElementById('users');
@@ -33,7 +34,7 @@ function loadText() {
         if (this.status == 200) {
             // console.log(this.responseText);
 
-            container.innerHTML = this.responseText;
+            container1.innerHTML = this.responseText;
         } else
         if (this.status = 404) {
             container.innerHTML = 'not found... :(';
