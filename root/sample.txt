@@ -1,1 +1,4 @@
-Text z pliku txt
+Text z pliku txt znajdujacego się w ./root/sample.txt
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad neque nobis, deserunt natus nemo libero! Veritatis facilis atque at, deserunt, odit sed voluptatum labore vel quia eos provident, fugiat perspiciatis!Quia culpa eius laudantium, itaque repellendus molestiae necessitatibus, distinctio numquam obcaecati, optio rem fugit nostrum alias! Nam qui aliquam voluptates aliquid totam dolore enim excepturi, itaque, eveniet dolorum, ipsum fugiat!
