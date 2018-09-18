@@ -7,18 +7,33 @@ function loadText() {
     var xhr = new XMLHttpRequest();
     // OPEN - type, url/text, async
     xhr.open('GET', './root/sample.txt', true);
+    console.log('READYSTATE: ', xhr.readyState);
 
-    // xhr.onload = function () {
-    //     if (this.status == 200) {
-    //         console.log(this.responseText);
-    //     }
-    // }
 
-    xhr.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+    // optional - used for loaders
+
+    xhr.onprogress = function () {
+        console.log('READYSTATE: ', xhr.readyState);
+    }
+
+    xhr.onload = function () {
+        console.log('READYSTATE: ', xhr.readyState);
+        if (this.status == 200) {
             console.log(this.responseText);
         }
     }
+
+    xhr.onerror = function () {
+        console.log('request error...');
+
+    }
+
+    // xhr.onreadystatechange = function () {
+    //     console.log('READYSTATE: ', xhr.readyState);
+    //     if (this.readyState == 4 && this.status == 200) {
+    //         console.log(this.responseText);
+    //     }
+    // }
     // sends request
     xhr.send();
 
