@@ -1,13 +1,20 @@
 const btn1 = document.getElementById('btn1');
+const btn2 = document.getElementById('btn2');
+const btn3 = document.getElementById('btn3');
 let container = document.getElementById('cont1');
-
+let user = document.getElementById('user');
+let users = document.getElementById('users');
+// Event Listeners
 btn1.addEventListener('click', loadText);
+btn2.addEventListener('click', loadUser);
+// btn3.addEventListener('click', loadUsers);
+
 
 function loadText() {
     //Create XHR Object
     var xhr = new XMLHttpRequest();
     // OPEN - type, url/text, async
-    xhr.open('GET', './root/sample2.txt', true);
+    xhr.open('GET', './root/sample.txt', true);
     console.log('READYSTATE: ', xhr.readyState);
 
 
@@ -44,8 +51,21 @@ function loadText() {
     // }
     // sends request
     xhr.send();
+}
 
 
+function loadUser() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './root/scripts/user.json', true)
+
+    xhr.onload = function () {
+        if (this.status == 200) {
+            console.log(this.responseText);
+
+        }
+
+    }
+    xhr.send();
 }
 
 
