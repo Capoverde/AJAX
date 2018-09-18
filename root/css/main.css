@@ -85,7 +85,7 @@ section {
 #btn2 {
     position: absolute;
     bottom: 10%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-family: 'Montserrat';
@@ -104,6 +104,27 @@ section {
     border: 2px solid #fff;
 }
 
+#btn3 {
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    background: transparent;
+    padding: 5px 8px;
+    color: var(--f-c);
+    border: 2px solid var(--f-c);
+    border-radius: 28px;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+
+#btn3:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
 
 hr {
     border: 0;
