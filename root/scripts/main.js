@@ -1,13 +1,17 @@
+// ZMIENNE GLOBALNE
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const btn3 = document.getElementById('btn3');
-let container = document.getElementById('cont1');
+const btnClear = document.getElementById('clear')
+let container2 = document.getElementById('cont2');
 let user = document.getElementById('user');
 let users = document.getElementById('users');
+
 // Event Listeners
 btn1.addEventListener('click', loadText);
 btn2.addEventListener('click', loadUser);
-// btn3.addEventListener('click', loadUsers);
+btn3.addEventListener('click', loadUsers);
+btnClear.addEventListener('click', clearContnent);
 
 
 function loadText() {
@@ -73,6 +77,34 @@ function loadUser() {
     xhr.send();
 }
 
+
+function loadUsers() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './root/scripts/users.json', true);
+
+    xhr.onload = function () {
+        if (this.status == 200) {
+            var users = JSON.parse(this.responseText);
+            var output = '';
+            // Ponieaż jest to tablica, to musimy zrobić pętlę i iterować
+            for (var i in users) {
+                output += '<ul>' +
+                    '<li>ID: ' + users[i].id + '</li>' +
+                    '<li>name: ' + users[i].name + '</li>' +
+                    '<li>email: ' + users[i].email + '</li>' +
+                    '</ul>';
+            }
+            document.getElementById('cont2').innerHTML = output;
+        }
+
+    }
+    xhr.send();
+}
+
+function clearContnent(e) {
+    e.preventDefault();
+    container2.innerHTML = '';
+}
 
 // readystate values:
 //  0 : request not initialized

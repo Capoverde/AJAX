@@ -61,7 +61,8 @@ section {
 
 li {
     list-style-type: lower-latin;
-
+    padding: 5px;
+    border-bottom: 1px solid rgb(78, 76, 76);
 }
 
 
@@ -113,7 +114,7 @@ li {
 #btn3 {
     position: absolute;
     bottom: 10%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-family: 'Montserrat';
@@ -131,6 +132,25 @@ li {
     color: #fff;
     border: 2px solid #fff;
 }
+
+
+#clear {
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    background: transparent;
+    padding: 5px 8px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+
 
 hr {
     border: 0;
